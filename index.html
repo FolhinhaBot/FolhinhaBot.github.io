@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+  .containerkk {
+    display: flex;
+    justify-content: center;
+    /* Centers items horizontally */
+    align-items: center;
+    /* Centers items vertically */
+  }
+</style>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,230 +19,30 @@
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
   <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-  <title>Little tests site</title>
+  <title>FolhinhaBot Twitch Bot</title>
 </head>
 
-<style>
-  .command {
-    cursor: pointer;
-    font-weight: bold;
-  }
-
-  .details {
-    display: none;
-  }
-
-  .container {
-    padding: 4rem;
-    background: #eee;
-  }
-
-  input[type="checkbox"] {
-    display: none;
-  }
-
-  .faq-drawer {
-    margin-bottom: 1rem;
-    flex: 1;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  }
-
-  .faq-drawer__title {
-    display: block;
-    position: relative;
-    padding: 1.8rem 3.5rem 1.8rem 1.8rem;
-    margin-bottom: 0;
-
-    background: white;
-
-    color: #373737;
-    font-weight: 600;
-    font-size: 15px;
-
-    border-radius: 8px;
-    transition: all 0.25s ease-out;
-    cursor: pointer;
-  }
-
-  .faq-drawer__title:hover {
-    color: #747474;
-  }
-
-  .faq-drawer__title::after {
-    content: " ";
-
-    position: absolute;
-    width: 0;
-    height: 0;
-    top: 34px;
-    right: 20px;
-    float: right;
-
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid currentColor;
-    transition: transform 0.2s ease-out;
-  }
-
-  .faq-drawer__trigger:checked+.faq-drawer__title::after {
-    transform: rotate(-180deg);
-  }
-
-  .faq-drawer__content-wrapper {
-    overflow: hidden;
-    max-height: 0px;
-    font-size: 15px;
-    line-height: 23px;
-
-    transition: max-height 0.25s ease-in-out;
-  }
-
-  .faq-drawer__trigger:checked+.faq-drawer__title+.faq-drawer__content-wrapper {
-    max-height: 350px;
-  }
-
-  .faq-drawer__trigger:checked+.faq-drawer__title {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-
-  .faq-drawer__content-wrapper .faq-drawer__content {
-    background: white;
-    padding: 2px 18px 14px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-  }
-
-  .invisible {
-    visibility: hidden !important;
-  }
-</style>
-
 <body class="bg-dark">
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand">FolhinhaBot</a>
     <img src="assets/img/favicon.ico" width="30" height="30" alt="">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Page 1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="opa.html">Page 2</a>
-        </li>
-      </ul>
-    </div>
   </nav>
 
+  <div class="container">
+    <div class="containerkk" style="padding-top: 300px;">
+      <h1 class="text-center text-light pr-3">Site em manutenção</h1>
+      <img src="assets/img/donkMiner.gif"
+        class="pb-3" width="80px" alt="">
+    </div>
+    <div class="containerkk">
+      <p class="text-center text-light">Qualquer dúvida, pode falar no chat do <a style="color: #A96FFF;" href="https://www.twitch.tv/leafybh" target="_blank">@leafybh</a> na Twitch ou pode mandar whisper
+      </p>
+      <img src="assets/img/Joia.png"
+        class="pb-4 pl-2" width="50px" alt="">
 
-  <div class="container w-100 bg-dark mw-100">
-    <div class="faq-drawer">
-      <input class="faq-drawer__trigger" id="faq-drawer" type="checkbox" />
-      <label class="faq-drawer__title" for="faq-drawer">!live</label>
-      <div class="faq-drawer__content-wrapper">
-        <div class="faq-drawer__content">
-          <p class="pt-4">
-            Mostra há quantos dias o streamer não faz live.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="faq-drawer">
-      <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" />
-      <label class="faq-drawer__title" for="faq-drawer-2">!piada<span class="pl-1 invisible">ou !piadas</span></label>
-      <div class="faq-drawer__content-wrapper">
-        <div class="faq-drawer__content">
-          <p class="pt-4">
-            O bot vai mandar uma piada hilária!
-          </p>
-          <p>
-            Ex de resposta: Por que a planta não responde? Porque ela é mudinha.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="faq-drawer">
-      <input class="faq-drawer__trigger" id="faq-drawer-3" type="checkbox" />
-      <label class="faq-drawer__title" for="faq-drawer-3">!curiosidade<span class="pl-1 invisible">ou
-          !curiosidades</span></label>
-      <div class="faq-drawer__content-wrapper">
-        <div class="faq-drawer__content">
-          <p class="pt-4">
-            O bot vai mandar uma curiosidade 100% necessária para sobreviver neste mundo.
-          </p>
-          <p>
-            Ex de resposta: Os coalas podem dormir até 20 horas por dia.
-          </p>
-        </div>
-      </div>
     </div>
   </div>
-
-
-  <nav class="navbar fixed-bottom navbar-expand-lg bg-white navbar-dark">
-    I probably forgot about this for a long time, so I'll just set a timer here just for funzies - <span id="demo"
-      class="pl-1"></span>
-  </nav>
-
-  <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-  <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Feb 2, 2023 08:37:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function () {
-
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = now - countDownDate;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Output the result in an element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-
-    }, 1000);
-
-    // Add event listeners to checkboxes
-    var triggers = document.getElementsByClassName("faq-drawer__trigger");
-    for (var i = 0; i < triggers.length; i++) {
-      triggers[i].addEventListener("change", toggleInvisibleClass);
-    }
-
-    // Function to toggle the "invisible" class with fade effect
-    function toggleInvisibleClass() {
-      var spans = this.parentNode.getElementsByTagName("span");
-      for (var i = 0; i < spans.length; i++) {
-        var span = spans[i];
-        if (span.classList.contains("invisible")) {
-          span.style.transition = "opacity 0.3s";
-          span.style.opacity = "0";
-          setTimeout(function () {
-            span.classList.remove("invisible");
-            span.style.opacity = "1";
-          }, 300);
-        } else {
-          span.style.transition = "opacity 0.3s";
-          span.style.opacity = "0";
-          setTimeout(function () {
-            span.classList.add("invisible");
-          }, 300);
-        }
-      }
-    }
-
-  </script>
 
 </body>
 
