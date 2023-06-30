@@ -1,48 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<style>
-  .containerkk {
-    display: flex;
-    justify-content: center;
-    /* Centers items horizontally */
-    align-items: center;
-    /* Centers items vertically */
-  }
-</style>
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
-  <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-  <title>FolhinhaBot Twitch Bot</title>
+    <title>Little tests site</title>
 </head>
 
-<body class="bg-dark">
+<style>
+    .command {
+        cursor: pointer;
+        font-weight: bold;
+    }
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand">FolhinhaBot</a>
-    <img src="assets/img/favicon.ico" width="30" height="30" alt="">
-  </nav>
+    .details {
+        display: none;
+    }
 
-  <div class="container">
-    <div class="containerkk" style="padding-top: 300px;">
-      <h1 class="text-center text-light pr-3">Site em manutenção</h1>
-      <img src="assets/img/donkMiner.gif"
-        class="pb-3" width="80px" alt="">
+    .container {
+        padding: 4rem;
+        background: #eee;
+    }
+
+    .glow {
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .faq-drawer {
+        margin-bottom: 1.8rem;
+        flex: 1;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-drawer__title {
+        display: block;
+        position: relative;
+        padding: 1.8rem 3.5rem 1.8rem 1.8rem;
+        margin-bottom: 0;
+        color: #efffff;
+        font-weight: 600;
+        font-size: 15px;
+        border-radius: 8px;
+        transition: all 0.25s ease-out;
+        cursor: pointer;
+        border: 2px solid green;
+        /* Add text-shadow property for glow effect */
+        text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        /* Adjust the color and blur as per your preference */
+    }
+
+    .faq-drawer__title:hover {
+        /* Existing CSS properties... */
+        color: white;
+        text-shadow: 0 0 20px #efffff;
+        /* Increase the blur and alpha to make it glow stronger */
+    }
+
+
+    .faq-drawer__title::after {
+        content: " ";
+
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 34px;
+        right: 20px;
+        float: right;
+
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid currentColor;
+        transition: transform 0.2s ease-out;
+    }
+
+    .faq-drawer__trigger:checked+.faq-drawer__title {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+
+        /* Add this line to show bottom border when expanded */
+        border-bottom: 0px solid white;
+    }
+
+    .faq-drawer__trigger:checked+.faq-drawer__title::after {
+        transform: rotate(-180deg);
+    }
+
+    .faq-drawer__content-wrapper {
+        overflow: hidden;
+        max-height: 0px;
+        font-size: 15px;
+        line-height: 23px;
+
+        transition: max-height 0.25s ease-in-out;
+    }
+
+    .faq-drawer__trigger:checked+.faq-drawer__title+.faq-drawer__content-wrapper {
+        max-height: 350px;
+    }
+
+    .faq-drawer__trigger:checked+.faq-drawer__title {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .faq-drawer__content-wrapper .faq-drawer__content {
+        padding: 2px 18px 14px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-bottom: 2px solid green;
+        border-left: 2px solid green;
+        border-right: 2px solid green;
+        color: #efffff;
+    }
+
+
+    .invisible {
+        visibility: hidden !important;
+    }
+
+    .visible {
+        visibility: visible !important;
+    }
+
+    .bg-dark1 {
+        background-color: #060606 !important;
+    }
+
+    .bg-dark2 {
+        background-color: #272727 !important;
+    }
+
+    .bg-green1 {
+        background-color: #ade7b3 !important;
+    }
+
+    .border-green {
+        border-color: green !important;
+    }
+</style>
+
+<body class="bg-dark1">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark1 border-bottom border-green text-white">
+        <a class="navbar-brand">FolhinhaBot</a>
+        <img src="assets/img/favicon.ico" width="43" height="43" alt="a">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" href="#">não sei</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="opa.html">Invite? nsei</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container w-100 bg-dark1 mw-100">
+        <div class="row">
+            <div style="padding-left: 0.5rem !important; padding-right: 0.5rem !important;" class="col-md-6">
+                <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer">!live</label>
+                    <div class="faq-drawer__content-wrapper">
+                        <div class="faq-drawer__content">
+                            <p>
+                                Mostra há quantos dias o streamer não faz live.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-2">!piada<span class="pl-1 invisible">ou
+                            !piadas</span></label>
+                    <div class="faq-drawer__content-wrapper">
+                        <div class="faq-drawer__content">
+                            <p>
+                                O bot vai mandar uma piada hilária!
+                            </p>
+                            <p>
+                                <i> Ex de resposta: Por que a planta não responde? Porque ela é mudinha.
+                                </i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-3" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-3">!vanish<span
+                            class="pl-1 invisible"></span></label>
+                    <div class="faq-drawer__content-wrapper">
+                        <div class="faq-drawer__content">
+                            <p>
+                                O clássico !vanish. Vai fazer todas as suas mensagens desaparecer.
+                            </p>
+                            <p><img src="assets\img\modBadge.png" alt="" class="mb-1 mr-1"><i>Requer que o <a
+                                        style="color: #00ad03;">@FolhinhaBot</a> seja moderador</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-4" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-4">!afk<span class="pl-1 invisible">ou
+                            !afk {mensagem}</span></label>
+                    <div class="faq-drawer__content-wrapper">
+                        <div class="faq-drawer__content">
+                            <p>
+                                O bot vai anotar por quanto tempo você vai ficar afk. Pode adicionar uma mensagem, se
+                                quiser, que vai ser dita quando você voltar a falar no chat.
+                            </p>
+                            <p>
+                                <i> Ex de uso: !afk a mimir <span><img src="assets\img\peepoSleep.gif"
+                                            class="pb-2 visible" width="30px" alt=""></span>
+                                </i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-10" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-10">!perola<span class="pl-1 invisible">ou
+                            !perolas</span></label>
+                    <div class="faq-drawer__content-wrapper">
+                        <div class="faq-drawer__content">
+                            <p>
+                                ainda não tem
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="padding-left: 0.5rem !important; padding-right: 0.5rem !important;" class="col-md-6">
+                <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-6" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-6">!curiosidade<span class="pl-1 invisible">ou
+                            !curiosidades</span></label>
+                    <div class="faq-drawer__content-wrapper">
+                        <div class="faq-drawer__content">
+                            <p>
+                                O bot vai mandar uma curiosidade 100% necessária para sobreviver neste mundo.
+                            </p>
+                            <p>
+                                <i> Ex de resposta: "Só sei que nada sei." - Sócrates
+                                </i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-5" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-5">!filosofia<span
+                            class="pl-1 invisible"></span></label>
+                    <div class="faq-drawer__content-wrapper">
+                        <div class="faq-drawer__content">
+                            <p>
+                                O bot vai mandar uma frase filosófica que vai te deixar pensando durante horas...
+                            </p>
+                            <p>
+                                <i> Ex de resposta: "Só sei que nada sei." - Sócrates
+                                </i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-7" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-7">!remind <a style="color: grey;">{user}
+                            {mensagem}</a><span class="pl-1 invisible">ou
+                            !lembrar <a style="color: grey;">{user} {mensagem}</a></span></label>
+                    <div class="faq-drawer__content-wrapper">
+                        <div class="faq-drawer__content">
+                            <p>
+                                Vai lembrar a pessoa que você colocou no comando do que você colocou na mensagem.
+                            </p>
+                            <p>
+                                <i> Ex de uso: !lembrar @leafybh você é muito bonito <br>Mensagem do bot: @leafybh,
+                                    @PessoaQueMandouComando pediu para eu te lembrar: você é muito bonito
+                                </i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-8" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-8">!roleta <a
+                            style="color: grey;">{minutos}</a><span class="pl-1 invisible">ou
+                            !rr <a style="color: grey;">{minutos}</a></span></label>
+                    <div class="faq-drawer__content-wrapper">
+                        <div class="faq-drawer__content">
+                            <p>
+                                Você vai jogar a roleta-russa com o bot. Caso tenha o azar de calhar a bala, você levará
+                                time-out na duração colocada no comando.
+                            </p>
+                            <p>
+                                <i>Ex de uso: !roleta 60</i>
+                            </p>
+                            <p><img src="assets\img\modBadge.png" alt="" class="mb-1 mr-1"><i>Requer que o <a
+                                        style="color: #00ad03;">@FolhinhaBot</a> seja moderador</i></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-drawer">
+                    <input class="faq-drawer__trigger" id="faq-drawer-9" type="checkbox" />
+                    <label class="faq-drawer__title" for="faq-drawer-9">!pause e !unpause<span class="pl-1 invisible">ou
+                            !pausar e !despausar</span></label>
+                    <div class="faq-drawer__content-wrapper">
+                        <div class="faq-drawer__content">
+                            <p>
+                                Qualquer moderador pode usar este comando para pausar ou despausar todos os comandos do
+                                <a style="color: #00ad03;">@FolhinhaBot</a> a qualquer momento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="containerkk">
-      <p class="text-center text-light">Qualquer dúvida, pode falar no chat do <a style="color: #A96FFF;" href="https://www.twitch.tv/leafybh" target="_blank">@leafybh</a> na Twitch ou pode mandar whisper
-      </p>
-      <img src="assets/img/Joia.png"
-        class="pb-4 pl-2" width="50px" alt="">
 
-    </div>
-  </div>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+
+        // Add event listeners to checkboxes
+        var triggers = document.getElementsByClassName("faq-drawer__trigger");
+        for (var i = 0; i < triggers.length; i++) {
+            triggers[i].addEventListener("change", toggleInvisibleClass);
+        }
+
+        // Function to toggle the "invisible" class with fade effect
+        function toggleInvisibleClass() {
+            var spans = this.parentNode.getElementsByTagName("span");
+            for (var i = 0; i < spans.length; i++) {
+                var span = spans[i];
+                if (span.classList.contains("invisible")) {
+                    span.style.transition = "opacity 0.3s";
+                    span.style.opacity = "0";
+                    setTimeout(function () {
+                        span.classList.remove("invisible");
+                        span.style.opacity = "1";
+                    }, 300);
+                } else {
+                    span.style.transition = "opacity 0.3s";
+                    span.style.opacity = "0";
+                    setTimeout(function () {
+                        span.classList.add("invisible");
+                    }, 300);
+                }
+            }
+        }
+
+    </script>
 
 </body>
 
