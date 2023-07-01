@@ -55,14 +55,14 @@
         cursor: pointer;
         border: 2px solid green;
         /* Add text-shadow property for glow effect */
-        text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        /* text-shadow: 0 0 10px rgba(0, 255, 0, 0.5); */
         /* Adjust the color and blur as per your preference */
     }
 
     .faq-drawer__title:hover {
         /* Existing CSS properties... */
         color: white;
-        text-shadow: 0 0 20px #efffff;
+        text-shadow: 0 0 12px #efffff;
         /* Increase the blur and alpha to make it glow stronger */
     }
 
@@ -88,7 +88,7 @@
         border-bottom-left-radius: 0;
 
         /* Add this line to show bottom border when expanded */
-        border-bottom: 0px solid white;
+        border-bottom: 0px solid #272727;
     }
 
     .faq-drawer__trigger:checked+.faq-drawer__title::after {
@@ -153,20 +153,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-dark1 border-bottom border-green text-white">
         <a class="navbar-brand">FolhinhaBot</a>
         <img src="assets/img/favicon.ico" width="43" height="43" alt="a">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link text-white" href="#">não sei</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="opa.html">Invite? nsei</a>
-                </li>
-            </ul>
-        </div>
+        
     </nav>
 
 
@@ -194,7 +181,7 @@
                                 O bot vai mandar uma piada hilária!
                             </p>
                             <p>
-                                <i> Ex de resposta: Por que a planta não responde? Porque ela é mudinha.
+                                <i> Ex. de resposta: Por que a planta não responde? Porque ela é mudinha.
                                 </i>
                             </p>
                         </div>
@@ -225,7 +212,7 @@
                                 quiser, que vai ser dita quando você voltar a falar no chat.
                             </p>
                             <p>
-                                <i> Ex de uso: !afk a mimir <span><img src="assets\img\peepoSleep.gif"
+                                <i> Ex. de uso: !afk a mimir <span><img src="assets\img\peepoSleep.gif"
                                             class="pb-2 visible" width="30px" alt=""></span>
                                 </i>
                             </p>
@@ -258,7 +245,7 @@
                                 O bot vai mandar uma curiosidade 100% necessária para sobreviver neste mundo.
                             </p>
                             <p>
-                                <i> Ex de resposta: "Só sei que nada sei." - Sócrates
+                                <i> Ex. de resposta: "Só sei que nada sei." - Sócrates
                                 </i>
                             </p>
                         </div>
@@ -274,7 +261,7 @@
                                 O bot vai mandar uma frase filosófica que vai te deixar pensando durante horas...
                             </p>
                             <p>
-                                <i> Ex de resposta: "Só sei que nada sei." - Sócrates
+                                <i> Ex. de resposta: "Só sei que nada sei." - Sócrates
                                 </i>
                             </p>
                         </div>
@@ -291,7 +278,7 @@
                                 Vai lembrar a pessoa que você colocou no comando do que você colocou na mensagem.
                             </p>
                             <p>
-                                <i> Ex de uso: !lembrar @leafybh você é muito bonito <br>Mensagem do bot: @leafybh,
+                                <i> Ex. de uso: !lembrar @leafybh você é muito bonito <br>Mensagem do bot: @leafybh,
                                     @PessoaQueMandouComando pediu para eu te lembrar: você é muito bonito
                                 </i>
                             </p>
@@ -310,7 +297,7 @@
                                 time-out na duração colocada no comando.
                             </p>
                             <p>
-                                <i>Ex de uso: !roleta 60</i>
+                                <i>Ex. de uso: !roleta 60</i>
                             </p>
                             <p><img src="assets\img\modBadge.png" alt="" class="mb-1 mr-1"><i>Requer que o <a
                                         style="color: #00ad03;">@FolhinhaBot</a> seja moderador</i></p>
@@ -332,6 +319,9 @@
                 </div>
             </div>
         </div>
+        <p class="text-white">Se quiser adicionar o <a style="color: #00ad03;">@FolhinhaBot</a> ao seu canal,
+            mande whisper para o <a style="color: #A96FFF;" href="https://www.twitch.tv/leafybh"
+                target="_blank">@leafybh</a> na Twitch.</p>
     </div>
 
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
