@@ -1,0 +1,322 @@
+Twitch Mod Command List.
+
+Command: ax2uBlind
+Usage: !ax2uBlind 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+Makes all rooms dark like lanternless rooms for a time.
+
+Command: nopogo
+Usage: !nopogo 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+Disables pogo knockback temporarily.
+
+Command: conveyor
+Usage: !conveyor 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+Floors or walls will act like conveyors
+
+Command: jumplength
+Usage: !jumplength 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+Gives a random jump length.
+
+Command: lifeblood
+Usage: !lifeblood 
+Cooldown: 1 use(s) per 00:00:40.
+Summary:
+No summary provided.
+
+Command: godmode
+Usage: !godmode 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+No summary provided.
+
+Command: sleep
+Usage: !sleep 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+No summary provided.
+
+Command: limitSoul
+Usage: !limitSoul 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+No summary provided.
+
+Command: jumpspeed
+Usage: !jumpspeed 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+Gives a random jump speed.
+
+Command: wind
+Usage: !wind 
+Cooldown: 1 use(s) per 00:03:00.
+Summary:
+Make it a windy day.
+
+Command: dashSpeed
+Usage: !dashSpeed 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+Change dash speed.
+
+Command: dashLength
+Usage: !dashLength 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+Changes dash length.
+
+Command: dashVector
+Usage: !dashVector 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+Changes dash vector. New vector generated when dashing in a new direction.
+
+Command: triplejump
+Usage: !triplejump 
+Cooldown: This command has no cooldown
+Summary:
+Gives you triple jump. Wings is enabled for the duration of this command.
+
+Command: overflow
+Usage: !overflow 
+Cooldown: 1 use(s) per 00:00:40.
+Summary:
+Gain more soul than you're able to carry, allowing you to cast 6 spells with base vessels.
+
+Command: timescale
+Usage: !timescale [scale]
+Cooldown: 1 use(s) per 00:02:00.
+Summary:
+Changes the timescale of the game for the time specified. Limit: [0.01, 2f]
+
+Command: gravity
+Usage: !gravity [scale]
+Cooldown: 1 use(s) per 00:02:00.
+Summary:
+Changes the gravity to the specified scale. Scale Limit: [0.2, 1.9]
+
+Command: invertcontrols
+Usage: !invertcontrols 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+Inverts the move direction of the player.
+
+Command: slippery
+Usage: !slippery 
+Cooldown: This command has no cooldown
+Summary:
+Makes the floor have no friction at all. Lasts for 60 seconds.
+
+Command: nailscale
+Usage: !nailscale [nailScale]
+Cooldown: This command has no cooldown
+Summary:
+Makes the nail huge or tiny. Scale limit: [.3, 5]
+
+Command: bindings
+Usage: !bindings 
+Cooldown: 1 use(s) per 00:05:00.
+Summary:
+Enables bindings.
+
+Command: float
+Usage: !float 
+Cooldown: 1 use(s) per 00:03:00.
+Summary:
+Gain float for 30s.
+
+Command: Salubra
+Usage: !Salubra 
+Cooldown: 1 use(s) per 00:00:30.
+Summary:
+Gain salubra's blessing even when off a bench within a room.
+
+Command: hwurmpU
+Usage: !hwurmpU 
+Cooldown: 1 use(s) per 00:05:00.
+Summary:
+I don't even know honestly.
+
+Command: walkspeed
+Usage: !walkspeed [speed]
+Cooldown: 1 use(s) per 00:03:00.
+Summary:
+Gain a random walk speed. Limit: [0.3, 10]
+
+Command: geo
+Usage: !geo 
+Cooldown: 1 use(s) per 00:06:40.
+Summary:
+Explode with geo.
+
+Command: respawn
+Usage: !respawn 
+Cooldown: 1 use(s) per 00:02:00.
+Summary:
+Hazard respawn
+
+Command: knockback
+Usage: !knockback [dirStr]
+Cooldown: 1 use(s) per 00:00:40.
+Summary:
+No summary provided.
+
+Command: slaphand
+Usage: !slaphand 
+Cooldown: 1 use(s) per 00:02:00.
+Summary:
+Heavy blow if it was actually good.
+
+Command: toggle
+Usage: !toggle [ability]
+Cooldown: 1 use(s) per 00:04:00.
+Summary:
+Toggles an ability for 45 seconds. Options: [dash, superdash, claw, wings, nail, tear, dnail]
+
+Command: doubledamage
+Usage: !doubledamage 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+Makes the player take double damage.
+
+Command: spawn
+Usage: !spawn [name]
+Cooldown: 3 use(s) per 00:01:00.
+Summary:
+Spawns an enemy.
+Enemies: [aspid, buzzer, roller]
+
+Command: jars
+Usage: !jars 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+Summons 5 collector jars from the ceiling.
+
+Command: spawnpv
+Usage: !spawnpv 
+Cooldown: 1 use(s) per 00:06:00.
+Summary:
+Spawns pure vessel with one-fourth the hp.
+
+Command: revek
+Usage: !revek 
+Cooldown: 1 use(s) per 00:04:00.
+Summary:
+Spawns revek. Goes away after 30s or one parry.
+
+Command: duplicateboss
+Usage: !duplicateboss 
+Cooldown: 2 use(s) per 00:02:40.
+Summary:
+Duplicates the current boss in the room. Mostly Godhome only.
+
+Command: spawnshade
+Usage: !spawnshade 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+Spawns the shade.
+
+Command: communism
+Usage: !communism 
+Cooldown: 1 use(s) per 00:02:00.
+Summary:
+Makes all enemies the median HP enemy in the scene
+
+Command: zap
+Usage: !zap 
+Cooldown: 1 use(s) per 00:00:30.
+Summary:
+Uumuu's lightning trail attack.
+
+Command: bees
+Usage: !bees 
+Cooldown: 1 use(s) per 00:02:00.
+Summary:
+Hive knight bees.
+
+Command: lasers
+Usage: !lasers 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+Summons crystal peak lasers.
+
+Command: spikefloor
+Usage: !spikefloor 
+Cooldown: This command has no cooldown
+Summary:
+Spawns nkg spikes.
+
+Command: orb
+Usage: !orb 
+Cooldown: 1 use(s) per 00:00:02.
+Summary:
+Spawns an abs orb.
+
+Command: cameffect
+Usage: !cameffect [effect]
+Cooldown: 4 use(s) per 00:00:30.
+Summary:
+Applies various effects to the camera.
+Effects: Invert, Flip, Nausea, Backwards, Mirror, Pixelate, and Zoom.
+
+Command: setText
+Usage: !setText [msg]
+Cooldown: 1 use(s) per 00:01:20.
+Summary:
+Sets every game text to the text provided.
+
+Command: heal
+Usage: !heal 
+Cooldown: 1 use(s) per 00:01:00.
+Summary:
+No summary provided.
+
+Command: rng
+Usage: !rng 
+Cooldown: 1 use(s) per 00:02:00.
+Summary:
+YUP RNG.
+
+Command: sfxRando
+Usage: !sfxRando 
+Cooldown: 1 use(s) per 00:03:00.
+Summary:
+Randomizes sfx sounds.
+
+Command: blacklist
+Usage: !blacklist [command]
+Cooldown: This command has no cooldown
+Summary:
+Disable a command's usage.
+
+Command: allowCommand
+Usage: !allowCommand [command]
+Cooldown: This command has no cooldown
+Summary:
+Re-enable a command's usage after having blacklisted it.
+
+Command: ban
+Usage: !ban [user]
+Cooldown: This command has no cooldown
+Summary:
+Prevent a user from using commands.
+
+Command: unban
+Usage: !unban [user]
+Cooldown: This command has no cooldown
+Summary:
+Re-allow a user to use commands.
+
+Command: timeout
+Usage: !timeout [item] [time]
+Cooldown: This command has no cooldown
+Summary:
+Timeout a user or command for a specified time (seconds).
+
