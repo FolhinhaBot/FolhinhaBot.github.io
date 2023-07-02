@@ -143,13 +143,13 @@
         position: fixed;
         bottom: 0;
         right: 15px;
-        border: 3px solid rgb(169,112,255);
+        border: 3px solid rgb(169, 112, 255);
         z-index: 9;
     }
 
     /* Add styles to the form container */
     .form-container {
-        max-width: 300px;
+        max-width: 320px;
         padding: 10px;
         background-color: #18181B;
     }
@@ -393,19 +393,21 @@
             </div>
         </div>
         <p class="text-white">Para testar os comandos do bot, pode testar no canal da Twitch do <a
-                style="color: #A96FFF;" href="https://www.twitch.tv/FolhinhaBot" target="_blank">@FolhinhaBot</a> no canto inferior direito.</p>
+                style="color: #A96FFF;" href="https://www.twitch.tv/FolhinhaBot" target="_blank">@FolhinhaBot</a> no
+            canto inferior direito.</p>
         <p class="text-white">Se quiser adicionar o <a style="color: #00ad03;">@FolhinhaBot</a> ao seu canal,
             mande whisper para o <a style="color: #A96FFF;" href="https://www.twitch.tv/leafybh"
                 target="_blank">@leafybh</a> na Twitch.</p>
 
     </div>
 
-    <button class="open-button" onclick="openForm()">Chat</button>
+    <button class="open-button" onclick="openForm()">Testar comandos no <a style="color: #A96FFF;">@FolhinhaBot</a></button>
 
     <div class="chat-popup" id="myForm">
         <form class="form-container">
-            <iframe id="chat_embed" src="https://www.twitch.tv/embed/folhinhabot/chat?parent=folhinhabot.github.io"
-                height="500" width="auto" style="border: none;">
+            <iframe id="chat_embed"
+                src="https://www.twitch.tv/embed/folhinhabot/chat?darkpopout?parent=folhinhabot.github.io" height="500"
+                width="auto" style="border: none;">
             </iframe>
             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
