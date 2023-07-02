@@ -132,9 +132,14 @@
         position: fixed;
         bottom: 23px;
         right: 28px;
-        width: 280px;
-        border: 2px solid green;
+        /* width: 280px; */
+        border: 2px solid rgb(169, 112, 255);
         border-radius: 8px;
+        transition: all 0.25s ease-out;
+    }
+
+    .open-button:hover {
+        text-shadow: 0 0 12px #efffff;
     }
 
     /* The popup chat - hidden by default */
@@ -143,7 +148,7 @@
         position: fixed;
         bottom: 18px;
         right: 15px;
-        border: 3px solid rgb(169, 112, 255);
+        border: 2px solid rgb(169, 112, 255);
         border-radius: 8px;
         z-index: 9;
     }
