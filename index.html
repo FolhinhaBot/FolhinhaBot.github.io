@@ -125,25 +125,26 @@
 
 
     .open-button {
-        background-color: #555;
-        color: white;
+        background-color: #060606;
+        color: #efffff;
         padding: 16px 20px;
-        border: none;
         cursor: pointer;
-        opacity: 0.8;
         position: fixed;
         bottom: 23px;
         right: 28px;
         width: 280px;
+        border: 2px solid green;
+        border-radius: 8px;
     }
 
     /* The popup chat - hidden by default */
     .chat-popup {
         display: none;
         position: fixed;
-        bottom: 0;
+        bottom: 18px;
         right: 15px;
         border: 3px solid rgb(169, 112, 255);
+        border-radius: 8px;
         z-index: 9;
     }
 
@@ -152,6 +153,7 @@
         max-width: 320px;
         padding: 10px;
         background-color: #18181B;
+        border-radius: 8px;
     }
 
     /* Full-width textarea */
@@ -174,8 +176,7 @@
     /* Set a style for the submit/send button */
     .form-container .btn {
         background-color: #04AA6D;
-        color: white;
-        padding: 16px 20px;
+        color: #efffff;
         border: none;
         cursor: pointer;
         width: 100%;
@@ -185,6 +186,12 @@
 
     /* Add a red background color to the cancel button */
     .form-container .cancel {
+        background-color: #272727;
+        border: 2px solid red;
+        border-radius: 8px;
+    }
+
+    .form-container .cancel:hover {
         background-color: red;
     }
 
@@ -409,7 +416,7 @@
                 src="https://www.twitch.tv/embed/folhinhabot/chat?darkpopout&parent=folhinhabot.github.io" height="500"
                 width="auto" style="border: none;">
             </iframe>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Fechar chat</button>
         </form>
     </div>
 
