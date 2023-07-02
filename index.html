@@ -207,6 +207,26 @@
     }
 
 
+    @media (max-width: 767px) {
+        .chat-popup-wrapper {
+            display: block;
+            position: fixed;
+            bottom: 18px;
+            right: 15px;
+            border: 2px solid rgb(169, 112, 255);
+            border-radius: 50%;
+            /* Make it a circle */
+            z-index: 9;
+        }
+
+        /* Adjust the popup size as needed */
+        .chat-popup-wrapper .chat-popup {
+            width: 60px;
+            height: 60px;
+            /* Any other mobile-specific styling you want... */
+        }
+    }
+
 
     .invisible {
         visibility: hidden !important;
@@ -413,16 +433,19 @@
 
     </div>
 
-    <button class="open-button" onclick="openForm()">Testar comandos no <a style="color: #A96FFF;">@FolhinhaBot</a></button>
+    <button class="open-button" onclick="openForm()">Testar comandos no <a
+            style="color: #A96FFF;">@FolhinhaBot</a></button>
 
-    <div class="chat-popup" id="myForm">
-        <form class="form-container">
-            <iframe id="chat_embed"
-                src="https://www.twitch.tv/embed/folhinhabot/chat?darkpopout&parent=folhinhabot.github.io" height="500"
-                width="auto" style="border: none;">
-            </iframe>
-            <button type="button" class="btn cancel" onclick="closeForm()">Fechar chat</button>
-        </form>
+    <div class="chat-popup-wrapper">
+        <div class="chat-popup" id="myForm">
+            <form class="form-container">
+                <iframe id="chat_embed"
+                    src="https://www.twitch.tv/embed/folhinhabot/chat?darkpopout&parent=folhinhabot.github.io"
+                    height="500" width="auto" style="border: none;">
+                </iframe>
+                <button type="button" class="btn cancel" onclick="closeForm()">Fechar chat</button>
+            </form>
+        </div>
     </div>
 
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
