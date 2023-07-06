@@ -1,0 +1,21 @@
+Instruções do !pet
+
+
+Criar pet:
+!pet create <emoji> <nome>
+(nem todos os emojis funcionam, ainda tenho de filtrar isso direitinho)
+
+
+Confiar alguem para configurar o pet:
+!pet trust <nick>
+
+
+Matar pet:
+!pet kill
+
+
+Fazer carinho:
+!carinho ou !pat
+
+
+Eventualmente vou colocar essas informações no site, mas por enquanto é isto
