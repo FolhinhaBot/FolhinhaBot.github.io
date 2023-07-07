@@ -10,8 +10,13 @@ Confiar alguem para configurar o pet:
 !pet trust <nick>
 
 
+Mudar cooldown do !carinho:
+!pet cooldown <tempo em segundos>
+
+
 Matar pet:
 !pet kill
+(se fizer isto, vai ter de esperar 24h para criar um novo pet)
 
 
 Fazer carinho:
