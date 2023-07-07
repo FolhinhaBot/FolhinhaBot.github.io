@@ -6,7 +6,7 @@ Criar pet:
 (nem todos os emojis funcionam, ainda tenho de filtrar isso direitinho)
 
 
-Confiar alguem para configurar o pet:
+Confiar alguém para configurar o pet:
 !pet trust <nick>
 
 
