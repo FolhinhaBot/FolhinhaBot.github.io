@@ -3,7 +3,9 @@ Instruções do !pet
 
 Criar pet:
 !pet create <emoji> <nome>
-(nem todos os emojis funcionam, ainda tenho de filtrar isso direitinho)
+
+Se quiser um emoji aleatório, use:
+!pet create random <nome>
 
 
 Confiar alguém para configurar o pet:
