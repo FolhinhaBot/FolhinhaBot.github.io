@@ -10,6 +10,10 @@ Confiar alguem para configurar o pet:
 !pet trust <nick>
 
 
+Tirar alguém da lista de pessoas que podem configurar o pet:
+!pet untrust <nick>
+
+
 Mudar cooldown do !carinho:
 !pet cooldown <tempo em segundos>
 
