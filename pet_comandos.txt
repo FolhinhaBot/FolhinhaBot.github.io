@@ -17,8 +17,10 @@ Tirar alguém da lista de pessoas que podem configurar o pet:
 
 
 Mudar cooldown do !carinho:
-!pet cooldown <tempo em segundos>
+!pet cooldown carinho <tempo em segundos>
 
+Mudar cooldown do !brincar
+!pet cooldown brincar <tempo em segundos>
 
 Matar pet:
 !pet kill
@@ -28,5 +30,7 @@ Matar pet:
 Fazer carinho:
 !carinho ou !pat
 
+Brincar com o pet:
+!brincar ou !play
 
 Eventualmente vou colocar essas informações no site, mas por enquanto é isto
