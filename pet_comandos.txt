@@ -1,5 +1,5 @@
 Instruções do !pet
-
+(é apenas 1 pet por chat, se quiser adicionar o bot ao seu canal, use !ajuda)
 
 Criar pet:
 !pet create <emoji> <nome>
