@@ -1,6 +1,7 @@
 Instruções do !pet
 (é apenas 1 pet por chat, se quiser adicionar o bot ao seu canal, use !ajuda)
 
+
 Criar pet:
 !pet create <emoji> <nome>
 
@@ -8,13 +9,17 @@ Se quiser um emoji aleatório, use:
 !pet create random <nome>
 
 
+
 Confiar alguém para configurar o pet:
 !pet trust <nick>
-
 
 Tirar alguém da lista de pessoas que podem configurar o pet:
 !pet untrust <nick>
 
+
+
+Mostrar o cooldown atual dos comandos:
+!pet cooldown
 
 Mudar cooldown do !carinho:
 !pet cooldown carinho <tempo em segundos>
@@ -22,9 +27,12 @@ Mudar cooldown do !carinho:
 Mudar cooldown do !brincar
 !pet cooldown brincar <tempo em segundos>
 
+
+
 Matar pet:
 !pet kill
 (se fizer isto, vai ter de esperar 24h para criar um novo pet)
+
 
 
 Fazer carinho:
@@ -32,5 +40,6 @@ Fazer carinho:
 
 Brincar com o pet:
 !brincar ou !play
+
 
 Eventualmente vou colocar essas informações no site, mas por enquanto é isto
